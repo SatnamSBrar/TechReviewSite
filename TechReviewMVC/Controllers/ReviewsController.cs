@@ -48,7 +48,7 @@ namespace TechReviewMVC.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ReviewID,CategoryID,ReviewTitle,ReviewBody,Date,Starred")] Review review)
+        public ActionResult Create([Bind(Include = "ReviewID,CategoryID,ReviewTitle,ReviewBody,Date,Author")] Review review)
         {
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace TechReviewMVC.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ReviewID,CategoryID,ReviewTitle,ReviewBody,Date,Starred")] Review review)
+        public ActionResult Edit([Bind(Include = "ReviewID,CategoryID,ReviewTitle,ReviewBody,Date,Author")] Review review)
         {
             if (ModelState.IsValid)
             {

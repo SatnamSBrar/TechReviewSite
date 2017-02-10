@@ -165,6 +165,10 @@
     <Compile Include="Migrations\201702101904421_RearrangeForeignKeyInReviewModel.Designer.cs">
       <DependentUpon>201702101904421_RearrangeForeignKeyInReviewModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702101914549_ChangedStarredToAuthorInReviewModel.cs" />
+    <Compile Include="Migrations\201702101914549_ChangedStarredToAuthorInReviewModel.Designer.cs">
+      <DependentUpon>201702101914549_ChangedStarredToAuthorInReviewModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Review.cs" />
@@ -246,6 +250,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201702101904421_RearrangeForeignKeyInReviewModel.resx">
       <DependentUpon>201702101904421_RearrangeForeignKeyInReviewModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702101914549_ChangedStarredToAuthorInReviewModel.resx">
+      <DependentUpon>201702101914549_ChangedStarredToAuthorInReviewModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

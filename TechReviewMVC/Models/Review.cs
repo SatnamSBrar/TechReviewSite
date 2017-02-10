@@ -16,7 +16,7 @@ namespace TechReviewMVC.Models
         public string ReviewBody { get; set; }
         [Display(Name ="Publish Date: ")]           //set Date to be named "Publish Date: "
         public DateTime Date { get; set; }
-        public int Starred { get; set; }
+        public string Author { get; set; }
 
         [ForeignKey("Category")]            //call in ID for Categories
         public int CategoryID { get; set; }

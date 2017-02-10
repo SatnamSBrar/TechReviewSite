@@ -10,7 +10,7 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 
-@*<div class="row">
+<div class="row">
     @foreach (var item in Model)
     {
         <div class="col-md-12">
@@ -18,25 +18,26 @@
                 <div class="caption">
                     <h3>@Html.DisplayFor(modelItem => item.Category)</h3>
                     <h3>@Html.DisplayFor(modelItem => item.ReviewTitle)</h3>
+                    <p>@Html.DisplayFor(modelItem => item.Author)</p>
                     <p>@Html.DisplayFor(modelItem => item.ReviewBody)</p>
                     <p>@Html.DisplayFor(modelItem => item.Date)</p>
                     <p>
-                        @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-info", role = "button" })
-                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-info", role = "button" })
-                        @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-info", role = "button" })
+                        @Html.ActionLink("Details", "Details", new { id = item.ReviewID }, new { @class = "btn btn-info", role = "button" })
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ReviewID }, new { @class = "btn btn-info", role = "button" })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ReviewID }, new { @class = "btn btn-info", role = "button" })
                     </p>
                 </div>
             </div>
         </div>
     }
-</div>*@
+</div>
 
 
 
 
 
 
-<table class="table">
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Category.CategoryName)
@@ -81,4 +82,4 @@
     </tr>
 }
 
-</table>
+</table>*@

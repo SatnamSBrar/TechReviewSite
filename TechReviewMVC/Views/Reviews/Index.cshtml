@@ -16,11 +16,11 @@
         <div class="col-md-12">
             <div class="thumbnail">
                 <div class="caption">
-                    <h3>@Html.DisplayFor(modelItem => item.Category.CategoryName)</h3>
-                    <h3>@Html.DisplayFor(modelItem => item.ReviewTitle)</h3>
-                    <p>@Html.DisplayFor(modelItem => item.Author)</p>
-                    <p>@Html.DisplayFor(modelItem => item.ReviewBody)</p>
-                    <p>@Html.DisplayFor(modelItem => item.Date)</p>
+                    <h4 class="category-header">Category:&nbsp;@Html.DisplayFor(modelItem => item.Category.CategoryName)</h4>
+                    <h3 class="review-header">@Html.DisplayFor(modelItem => item.ReviewTitle)</h3>
+                    <p class="review-author">@Html.DisplayFor(modelItem => item.Author)</p>
+                    <p class="review-body">@Html.DisplayFor(modelItem => item.ReviewBody)</p>
+                    <p>Published:&nbsp;@Html.DisplayFor(modelItem => item.Date)</p>
                     <p>
                         @Html.ActionLink("Details", "Details", new { id = item.ReviewID }, new { @class = "btn btn-info", role = "button" })
                         @Html.ActionLink("Edit", "Edit", new { id = item.ReviewID }, new { @class = "btn btn-info", role = "button" })

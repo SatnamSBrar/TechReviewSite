@@ -169,6 +169,14 @@
     <Compile Include="Migrations\201702101914549_ChangedStarredToAuthorInReviewModel.Designer.cs">
       <DependentUpon>201702101914549_ChangedStarredToAuthorInReviewModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702101944368_add-migration SetDateToAutomaticallyBeAssignedUponPublication.cs" />
+    <Compile Include="Migrations\201702101944368_add-migration SetDateToAutomaticallyBeAssignedUponPublication.Designer.cs">
+      <DependentUpon>201702101944368_add-migration SetDateToAutomaticallyBeAssignedUponPublication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702101946250_ChangeDateProtectionToPublic.cs" />
+    <Compile Include="Migrations\201702101946250_ChangeDateProtectionToPublic.Designer.cs">
+      <DependentUpon>201702101946250_ChangeDateProtectionToPublic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Review.cs" />
@@ -253,6 +261,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702101914549_ChangedStarredToAuthorInReviewModel.resx">
       <DependentUpon>201702101914549_ChangedStarredToAuthorInReviewModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702101944368_add-migration SetDateToAutomaticallyBeAssignedUponPublication.resx">
+      <DependentUpon>201702101944368_add-migration SetDateToAutomaticallyBeAssignedUponPublication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702101946250_ChangeDateProtectionToPublic.resx">
+      <DependentUpon>201702101946250_ChangeDateProtectionToPublic.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

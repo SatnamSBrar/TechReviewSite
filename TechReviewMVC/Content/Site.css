@@ -22,3 +22,15 @@ select,
 textarea {
     max-width: 280px;
 }
+.category-header {
+    color:rgb(91,192,222);
+}
+.review-header {
+    margin-top:10px;
+}
+.review-author {
+    font-style:italic;
+}
+.review-body {
+    margin:20px;
+}

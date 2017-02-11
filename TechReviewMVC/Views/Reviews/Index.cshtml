@@ -17,19 +17,27 @@
             <div class="CategoryPic">
                 @if (item.Category.CategoryName == "Game Console")
                 {
-                    
+                    <div class="gameImage">
+                        <img src="~/images/video-game-1856991_1280.png" class="img-responsive" />
+                    </div>
                 }
                 else if (item.Category.CategoryName == "Mobile Device")
                 {
-
+                    <div class="mobileImage">
+                        <img src="~/images/smartphone-1917228_1280.png" class="img-responsive" />
+                    </div>
                 }
                 else if (item.Category.CategoryName == "Mac/PC")
                 {
-
+                    <div class="cpuImage">
+                        <img src="~/images/monitor-155158_1280.png" class="img-responsive" />
+                    </div>
                 }
                 else
                 {
-
+                    <div class="defaultImage">
+                        <img src="~/images/monitor-155158_1280.png" class="img-responsive" />
+                    </div>
                 }
             </div>
         </div>

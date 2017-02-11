@@ -5,11 +5,11 @@
 }
 
 @*PAGE TITLE*@
-<h2>Reviews</h2>
+<h2 class="review-page-header">Reviews</h2>
 
-@*CREATE NEW REVEIW LINK*@
-<p>
-    @Html.ActionLink("Create New", "Create")
+@*CREATE NEW REVIEW*@
+<p class="new-review">
+    <button type="button" class = "btn btn-info create-new" onclick="location.href='@Url.Action("Create", "Reviews")'">Write a Review</button>
 </p>
 
 @*ROW CONTAINING REVIEW INFORMATION*@
@@ -18,7 +18,7 @@
     @foreach (var item in Model)
     {
         @*IMAGES FOR REIVEW CATEGORIES*@
-        <div class="col-xs-3 col-sm-3 col-md-3">
+        <div class="col-xs-2 col-sm-2 col-md-2">
             <div class="CategoryPic">
                 @if (item.Category.CategoryName == "Game Console")
                 {
@@ -47,7 +47,7 @@
             </div>
         </div>
         @*REVIEW*@
-        <div class="col-xs-9 col-sm-9 col-md-9"> 
+        <div class="col-xs-10 col-sm-10 col-md-10"> 
             <div class="thumbnail">
                 <div class="caption">
                     <h4 class="category-header">Category:&nbsp;@Html.DisplayFor(modelItem => item.Category.CategoryName)</h4>

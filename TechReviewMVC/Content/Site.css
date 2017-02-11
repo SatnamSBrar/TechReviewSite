@@ -1,6 +1,6 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,12 +22,27 @@ select,
 textarea {
     max-width: 280px;
 }
+/*CREATE NEW BUTTON*/
+.review-page-header {
+    margin-bottom:0px;
+}
+.new-review {
+    text-align:center;
+    margin-bottom:40px;
+}
+.btn.create-new {
+    padding-right:40px;
+    padding-left:40px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
 /*MODIFICATIONS TO EACH REVIEW*/
 .category-header {
     color:rgb(91,192,222);
 }
 .review-header {
     margin-top:10px;
+    margin-bottom:5px;
 }
 .review-author {
     font-style:italic;
@@ -46,6 +61,14 @@ textarea {
 }
 .navbar-inverse .navbar-brand {
     color:white;
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    margin-left:-146.06px;  /*SUBTRACTS SIZE OF NAVBAR-HEADER TO ENSURE CENTERED POSITION*/
+}
+.navbar .navbar-collapse {
+    text-align: center;
 }
 .navbar-inverse .navbar-nav li a {
     color:white;

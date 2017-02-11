@@ -4,15 +4,20 @@
     ViewBag.Title = "Index";
 }
 
+@*PAGE TITLE*@
 <h2>Reviews</h2>
 
+@*CREATE NEW REVEIW LINK*@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 
+@*ROW CONTAINING REVIEW INFORMATION*@
 <div class="row">
+    @*LOOP THAT IS ABLE TO HANDLE NEW REVIEW ADDITIONS*@
     @foreach (var item in Model)
     {
+        @*IMAGES FOR REIVEW CATEGORIES*@
         <div class="col-xs-3 col-sm-3 col-md-3">
             <div class="CategoryPic">
                 @if (item.Category.CategoryName == "Game Console")
@@ -41,7 +46,8 @@
                 }
             </div>
         </div>
-        <div class="col-xs-9 col-sm-9 col-md-9">
+        @*REVIEW*@
+        <div class="col-xs-9 col-sm-9 col-md-9"> 
             <div class="thumbnail">
                 <div class="caption">
                     <h4 class="category-header">Category:&nbsp;@Html.DisplayFor(modelItem => item.Category.CategoryName)</h4>
@@ -49,6 +55,7 @@
                     <p class="review-author">@Html.DisplayFor(modelItem => item.Author)</p>
                     <p class="review-body">@Html.DisplayFor(modelItem => item.ReviewBody)</p>
                     <p class="review-date">Published:&nbsp;@Html.DisplayFor(modelItem => item.Date)</p>
+                    @*BUTTONS FOR DETAILS, EDIT, AND DELETE*@
                     <p>
                         @Html.ActionLink("Details", "Details", new { id = item.ReviewID }, new { @class = "btn btn-info", role = "button" })
                         @Html.ActionLink("Edit", "Edit", new { id = item.ReviewID }, new { @class = "btn btn-info", role = "button" })

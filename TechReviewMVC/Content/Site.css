@@ -22,6 +22,7 @@ select,
 textarea {
     max-width: 280px;
 }
+/*MODIFICATIONS TO EACH REVIEW*/
 .category-header {
     color:rgb(91,192,222);
 }
@@ -38,3 +39,25 @@ textarea {
 .review-date {
     font-size:smaller;
 }
+/*NAVBAR*/
+.navbar-inverse {
+    background-color:rgb(30,35,39);
+    border-color:rgb(30,35,39);
+}
+.navbar-inverse .navbar-brand {
+    color:white;
+}
+.navbar-inverse .navbar-nav li a {
+    color:white;
+}
+/*NAVBAR BUTTON*/
+button.navbar-toggle {
+    background-color:rgb(91,192,222);
+}
+.navbar-inverse .navbar-toggle:hover{
+    background-color:rgb(91,192,222);
+}
+.navbar-inverse .navbar-toggle:focus {
+    background-color:rgb(91,192,222);
+}
+

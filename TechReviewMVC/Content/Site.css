@@ -32,5 +32,9 @@ textarea {
     font-style:italic;
 }
 .review-body {
-    margin:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.review-date {
+    font-size:smaller;
 }

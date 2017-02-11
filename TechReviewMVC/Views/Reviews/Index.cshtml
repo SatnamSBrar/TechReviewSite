@@ -13,14 +13,34 @@
 <div class="row">
     @foreach (var item in Model)
     {
-        <div class="col-md-12">
+        <div class="col-md-3">
+            <div class="CategoryPic">
+                @if (item.Category.CategoryName == "Game Console")
+                {
+                    
+                }
+                else if (item.Category.CategoryName == "Mobile Device")
+                {
+
+                }
+                else if (item.Category.CategoryName == "Mac/PC")
+                {
+
+                }
+                else
+                {
+
+                }
+            </div>
+        </div>
+        <div class="col-md-9">
             <div class="thumbnail">
                 <div class="caption">
                     <h4 class="category-header">Category:&nbsp;@Html.DisplayFor(modelItem => item.Category.CategoryName)</h4>
                     <h3 class="review-header">@Html.DisplayFor(modelItem => item.ReviewTitle)</h3>
                     <p class="review-author">@Html.DisplayFor(modelItem => item.Author)</p>
                     <p class="review-body">@Html.DisplayFor(modelItem => item.ReviewBody)</p>
-                    <p>Published:&nbsp;@Html.DisplayFor(modelItem => item.Date)</p>
+                    <p class="review-date">Published:&nbsp;@Html.DisplayFor(modelItem => item.Date)</p>
                     <p>
                         @Html.ActionLink("Details", "Details", new { id = item.ReviewID }, new { @class = "btn btn-info", role = "button" })
                         @Html.ActionLink("Edit", "Edit", new { id = item.ReviewID }, new { @class = "btn btn-info", role = "button" })

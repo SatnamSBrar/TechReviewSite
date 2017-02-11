@@ -83,4 +83,8 @@ button.navbar-toggle {
 .navbar-inverse .navbar-toggle:focus {
     background-color:rgb(91,192,222);
 }
-
+/*FOOTER*/
+.footer {
+    font-size:8px;
+    font-style:italic;
+}

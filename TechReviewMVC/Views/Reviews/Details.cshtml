@@ -52,7 +52,9 @@
 
     </dl>
 </div>
+@*GO BACK TO LIST and EDIT and DELETE*@
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }, new { @class = "btn btn-info", role = "button" })
+    @Html.ActionLink("Delete", "Delete", new { id = Model.ReviewID }, new { @class = "btn btn-info", role = "button" })
+    <button type="button" class="btn btn-info" onclick="location.href='@Url.Action("Index", "Reviews")'">Back to List</button>
 </p>

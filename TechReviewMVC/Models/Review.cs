@@ -12,9 +12,12 @@ namespace TechReviewMVC.Models
         [Key]
         public int ReviewID { get; set; }   //set ID for Reviews
 
-        public string ReviewTitle { get; set; }     //Model attributes
+        //Model attributes
+        [Display(Name = "Title")]                   //set reviewtitle to be named title
+        public string ReviewTitle { get; set; }
+        [Display(Name = "Review")]                  //set reviewbody to be named review
         public string ReviewBody { get; set; }
-        [Display(Name ="Publish Date: ")]           //set Date to be named "Publish Date: "
+        [Display(Name ="Publish Date")]             //set Date to be named "Publish Date: "
         public DateTime Date { get; set; }
         public Review()                             //Set date to be assigned upon review publication
         {
@@ -23,7 +26,7 @@ namespace TechReviewMVC.Models
         }
         public string Author { get; set; }
 
-        [ForeignKey("Category")]            //call in ID for Categories
+        [ForeignKey("Category"), Display(Name = "Category")]            //call in ID for Categories
         public int CategoryID { get; set; }
         public virtual Category Category { get; set; }
     }

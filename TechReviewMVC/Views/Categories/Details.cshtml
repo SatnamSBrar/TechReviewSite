@@ -20,7 +20,11 @@
 
     </dl>
 </div>
+
+@*GO BACK TO LIST and EDIT and DELETE*@
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.CategoryID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CategoryID }, new { @class = "btn btn-info", role = "button" })
+    @Html.ActionLink("Delete", "Delete", new { id = Model.CategoryID }, new { @class = "btn btn-info", role = "button" })
+    <button type="button" class="btn btn-info" onclick="location.href='@Url.Action("Index", "Categories")'">Back to List</button>
 </p>
+

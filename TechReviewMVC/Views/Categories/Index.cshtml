@@ -4,7 +4,41 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2 class="category-page-header">Categories</h2>
+
+@*CREATE NEW REVIEW*@
+<p class="new-category">
+    <button type="button" class="btn btn-info create-new" onclick="location.href='@Url.Action("Create", "Categories")'">Create Category</button>
+</p>
+
+@*ROW CONTAINING REVIEW INFORMATION*@
+<div class="row">
+    @*LOOP THAT IS ABLE TO HANDLE NEW REVIEW ADDITIONS*@
+    @foreach (var item in Model)
+    {
+        @*CATEGORY*@
+        <div class="col-xs-4 col-sm-4 col-md-4 category-grid">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4 class="category-header">@Html.DisplayFor(modelItem => item.CategoryName)</h4>
+                    @*BUTTONS FOR DETAILS, EDIT, AND DELETE*@
+                    <p>
+                        @Html.ActionLink("Details", "Details", new { id = item.CategoryID }, new { @class = "btn btn-info", role = "button" })
+                        @Html.ActionLink("Edit", "Edit", new { id = item.CategoryID }, new { @class = "btn btn-info", role = "button" })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.CategoryID }, new { @class = "btn btn-info", role = "button" })
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+
+
+@*<h2>Index</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -30,4 +64,4 @@
     </tr>
 }
 
-</table>
+</table>*@

@@ -29,6 +29,13 @@ select,
 textarea {
     max-width: 280px;
 }
+/*JUMBOTRON*/
+.jumbotron {
+    background-color:rgba(255,255,255,0.75);
+}
+.jumbotron h1 {
+    font-family:'Carter One';
+}
 /*BUTTONS*/
 .btn.btn-info {
     background-color:rgb(86,141,138);
@@ -80,7 +87,7 @@ textarea {
 }
 .navbar-inverse .navbar-brand {
     color:white;
-    font-style:oblique;
+    font-family:'Carter One';
 }
 .navbar .navbar-nav {
     display: inline-block;
@@ -107,4 +114,19 @@ button.navbar-toggle {
 .footer {
     font-size:8px;
     font-style:italic;
+}
+/*ABOUT PAGE IMAGE*/
+.about-image .img-responsive {
+    max-height:500px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:-100px;
+    margin-bottom:-80px;
+}
+/*CONTACT PAGE IMAGE*/
+.contact-image .img-responsive {
+    max-height:300px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:30px;
 }
